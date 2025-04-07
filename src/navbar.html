@@ -2,51 +2,218 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Responsive Navbar</title>
-    <link rel="stylesheet" href="output.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Responsive Navbar</title>
+  <link rel="stylesheet" href="output.css" />
 </head>
 
 <body class="bg-gray-100">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-lg">
-        <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-0">
-            <a href="#" class="text-xl font-bold">Flow</a>
-            <div class="hidden md:flex space-x-4">
-                <a href="#!" class="text-gray-600 hover:text-blue-500 font-semibold">Home</a>
-                <a href="#!" class="text-gray-600 hover:text-blue-500 font-semibold">About</a>
-                <a href="#!" class="text-gray-600 hover:text-blue-500 font-semibold">Contact</a>
-            </div>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg mb-8">
+    <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-0">
+      <a href="#" class="text-xl font-bold">Flow</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">About</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+      </div>
 
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center" id="menu-btn">
-                <button class="text-gray-800 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M4 6h16" />
-                        <path d="M7 12h13" />
-                        <path d="M10 18h10" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white">
-            <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-blue-500 font-semibold">Home</a>
-            <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-blue-500 font-semibold">About</a>
-            <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-blue-500 font-semibold">Contact</a>
-        </div>
-    </nav>
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center menu-btn">
+        <button class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-white mobile-menu">
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">About</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+    </div>
+  </nav>
+  <nav class="bg-white shadow-lg mb-8">
+    <div class="container mx-auto flex justify-between lg:justify-start w-full items-center py-4 px-4 md:px-0">
+      <a href="#" class="text-xl font-bold mr-12">Flow</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">About</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+      </div>
 
-        menuBtn.addEventListener('click', () => {
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center menu-btn">
+        <button class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-white mobile-menu">
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">About</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+    </div>
+  </nav>
+  <nav class="bg-white shadow-lg mb-8">
+    <div class="container mx-auto flex items-center py-4 px-4 md:px-0">
+      <a href="#" class="text-xl font-bold mr-12">Flow</a>
+      <div class="hidden md:flex space-x-4">
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">About</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+      </div>
+      <div class="ml-auto">
+        <a href="#"
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Login</a>
+        <a href=""
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Sign
+          up</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center menu-btn ml-4">
+        <button class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-white mobile-menu">
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">About</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+    </div>
+  </nav>
+  <nav class="bg-white shadow-lg mb-8">
+    <div class="container mx-auto flex items-center py-4 px-4 md:px-0">
+      <a href="#" class="text-xl font-bold">Flow</a>
+      <div class="hidden md:flex space-x-4 ml-auto">
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">About</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+        <a href="#!" class="text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+      </div>
+      <div class="ml-auto">
+        <a href="#"
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Login</a>
+        <a href=""
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Sign
+          up</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center menu-btn ml-4">
+        <button class="text-gray-800 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-white mobile-menu">
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Home</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">About</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Service</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Teams</a>
+      <a href="#!" class="block px-4 py-2 text-gray-600 hover:text-orange-500 font-semibold">Contact</a>
+    </div>
+  </nav>
+  <nav class="bg-gray-800 text-white shadow-lg mb-8">
+    <div class="container mx-auto flex items-center py-4 px-4 md:px-0">
+      <a href="#" class="text-xl font-bold">Flow</a>
+      <div class="hidden md:flex space-x-4 ml-auto">
+        <a href="#!" class="text-gray-300 hover:text-orange-500 font-semibold">Home</a>
+        <a href="#!" class="text-gray-300 hover:text-orange-500 font-semibold">About</a>
+        <a href="#!" class="text-gray-300 hover:text-orange-500 font-semibold">Service</a>
+        <a href="#!" class="text-gray-300 hover:text-orange-500 font-semibold">Teams</a>
+        <a href="#!" class="text-gray-300 hover:text-orange-500 font-semibold">Contact</a>
+      </div>
+      <div class="ml-auto">
+        <a href="#"
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Login</a>
+        <a href=""
+          class="inline-block px-3 py-2 bg-orange-600 border border-orange-600 text-white hover:bg-orange-800 hover:border-orange-800 rounded-lg">Sign
+          up</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center menu-btn ml-4">
+        <button class="text-gray-300 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6h16" />
+            <path d="M7 12h13" />
+            <path d="M10 18h10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="hidden md:hidden bg-gray-800 mobile-menu">
+      <a href="#!" class="block px-4 py-2 text-gray-300 hover:text-orange-500 font-semibold">Home</a>
+      <a href="#!" class="block px-4 py-2 text-gray-300 hover:text-orange-500 font-semibold">About</a>
+      <a href="#!" class="block px-4 py-2 text-gray-300 hover:text-orange-500 font-semibold">Service</a>
+      <a href="#!" class="block px-4 py-2 text-gray-300 hover:text-orange-500 font-semibold">Teams</a>
+      <a href="#!" class="block px-4 py-2 text-gray-300 hover:text-orange-500 font-semibold">Contact</a>
+    </div>
+  </nav>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButtons = document.querySelectorAll('.menu-btn');
+
+      menuButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const nav = btn.closest('nav'); // Get the closest nav
+          const mobileMenu = nav.querySelector('.mobile-menu'); // Find the corresponding menu inside nav
+          if (mobileMenu) {
             mobileMenu.classList.toggle('hidden');
+          }
         });
-    </script>
+      });
+    });
+  </script>
 </body>
 
 </html>
